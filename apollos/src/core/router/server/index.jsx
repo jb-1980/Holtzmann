@@ -77,6 +77,10 @@ export function run(routes, serverOptions = {}) {
             res.writeHead(200);
             res.write("PONG");
             res.end();
+          } else if (req.url === "/ping") {
+            res.writeHead(200);
+            res.write("PONG");
+            res.end();
           } else if (redirectLocation) {
             res.writeHead(302, {
               Location: redirectLocation.pathname + redirectLocation.search
