@@ -1,0 +1,9 @@
+exports[`test displays an empty fieldset to the user 1`] = `
+<fieldset
+  className="flush-bottom" />
+`;
+
+exports[`test displays an empty fieldset, with classes to the user 1`] = `
+<fieldset
+  className="flush-bottom foo" />
+`;
