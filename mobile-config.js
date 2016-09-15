@@ -1,12 +1,12 @@
 App.info({
-  id: "cc.newspring.newspringapp",
+  "id": "com.subsplashstudio31.NewSpring-Church",
   name: "NewSpring",
   description: "App for NewSpring Church",
   author: "NewSpring Church",
   email: "web@newspring.cc",
   website: "https://newspring.cc",
-  version: "0.0.3",
-  buildNumber: "156"
+  version: "5.0.2",
+  buildNumber: "1"
 });
 
 App.icons({
