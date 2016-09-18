@@ -26,7 +26,11 @@
   },
   "homepage": "https://github.com/NewSpring/my.newspring.cc",
   "jest": {
-    "coverageDirectory": "./.coverage"
+    "coverageDirectory": "./.coverage",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.meteor/"
+    ]
   },
   "apollos": {
     "settings": "./.meteor/settings.json",
