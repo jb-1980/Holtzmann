@@ -8,7 +8,7 @@ exports[`test should accept props 1`] = `
   <input
     className={undefined}
     defaultChecked="checked"
-    disabled="true"
+    disabled={true}
     id="test7"
     name={undefined}
     onClick="test8"
