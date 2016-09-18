@@ -1,0 +1,18 @@
+exports[`test should accept children 1`] = `
+<fieldset
+  className="flush-bottom">
+  <p>
+    hello
+  </p>
+</fieldset>
+`;
+
+exports[`test should accept props 1`] = `
+<fieldset
+  className="flush-bottom class class2" />
+`;
+
+exports[`test should exist 1`] = `
+<fieldset
+  className="flush-bottom" />
+`;
