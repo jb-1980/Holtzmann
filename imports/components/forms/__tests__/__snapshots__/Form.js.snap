@@ -1,0 +1,25 @@
+exports[`test accepts all props 1`] = `
+<form
+  action="test4"
+  className="hard-ends test3"
+  id="test1"
+  method="test5"
+  onSubmit="test2"
+  style="test6">
+  <fieldset
+    className="test7" />
+</form>
+`;
+
+exports[`test should exist 1`] = `
+<form
+  action={undefined}
+  className="hard-ends"
+  id={undefined}
+  method={undefined}
+  onSubmit={undefined}
+  style={undefined}>
+  <fieldset
+    className="flush-bottom" />
+</form>
+`;
