@@ -7,6 +7,18 @@ it("should exist", () => {
 });
 
 it("should accept props", () => {
-  const checkbox = renderer.create(<Checkbox validation="test" status="test2" disabled errorText="test4" error classes="test6" id="test7" defaultValue clicked="test8" style="test9"/>);
+  const checkbox = renderer.create(
+    <Checkbox
+      validation={() => {}}
+      status="test2"
+      disabled
+      errorText="test4"
+      error
+      classes={["test5"]}
+      id="test7"
+      defaultValue="checked"
+      clicked={() => {}}
+      style="test9"
+      inputClasses={["test10", "test11"]}/>);
   expect(checkbox).toMatchSnapshot();
 });
