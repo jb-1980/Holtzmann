@@ -1,0 +1,51 @@
+exports[`test should accept props 1`] = `
+<div
+  className="input checkbox input--alert test6">
+  <h6
+    className="soft-left push-half-left flush-bottom text-left float-left locked-top">
+    <small />
+  </h6>
+  <input
+    className={undefined}
+    defaultChecked="checked"
+    disabled="true"
+    id="test7"
+    name={undefined}
+    onClick="test8"
+    style={
+      Object {
+        "width": 0
+      }
+    }
+    type="checkbox" />
+  <label
+    htmlFor="test7"
+    style={Object {}} />
+</div>
+`;
+
+exports[`test should exist 1`] = `
+<div
+  className="input checkbox">
+  <h6
+    className="soft-left push-half-left flush-bottom text-left float-left locked-top">
+    <small />
+  </h6>
+  <input
+    className={undefined}
+    defaultChecked=""
+    disabled={undefined}
+    id={undefined}
+    name={undefined}
+    onClick={undefined}
+    style={
+      Object {
+        "width": 0
+      }
+    }
+    type="checkbox" />
+  <label
+    htmlFor={undefined}
+    style={Object {}} />
+</div>
+`;
