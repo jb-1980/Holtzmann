@@ -23,3 +23,29 @@ exports[`test should accept props 1`] = `
     style={Object {}} />
 </div>
 `;
+
+exports[`test should exist 1`] = `
+<div
+  className="input checkbox">
+  <h6
+    className="soft-left push-half-left flush-bottom text-left float-left locked-top">
+    <small />
+  </h6>
+  <input
+    className=""
+    defaultChecked=""
+    disabled={false}
+    id={undefined}
+    name={undefined}
+    onClick={undefined}
+    style={
+      Object {
+        "width": 0
+      }
+    }
+    type="checkbox" />
+  <label
+    htmlFor={undefined}
+    style={Object {}} />
+</div>
+`;

@@ -135,6 +135,7 @@
     "mkdirp": "^0.5.1",
     "norma-bower": "^0.3.8",
     "norma-meteor-run": "jbaxleyiii/norma-meteor-run",
+    "react-addons-test-utils": "^15.3.1",
     "react-test-renderer": "^15.3.1",
     "rimraf": "^2.5.2",
     "symlink-or-copy": "^1.1.3",
