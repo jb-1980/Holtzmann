@@ -6,7 +6,7 @@ App.info({
   email: "web@newspring.cc",
   website: "https://newspring.cc",
   version: "5.0.1",
-  buildNumber: "1"
+  buildNumber: "2"
 });
 
 App.icons({
