@@ -1,3 +1,4 @@
+// XXX this should be in blocks
 import { Component, PropTypes } from "react";
 import { connect } from "react-apollo";
 import gql from "graphql-tag";

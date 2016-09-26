@@ -9,7 +9,7 @@ import OnBoard from "../accounts";
 const map = state => ({
   auth: state.accounts.authorized,
   modal: state.modal,
-  previous: state.routing.location.previous,
+  // previous: state.routing.location.previous,
 });
 @connect(map)
 export default class Authorized extends Component {
