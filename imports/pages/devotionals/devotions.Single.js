@@ -54,7 +54,7 @@ const DEVOTION_QUERY = gql `
 `;
 
 
-const withDevotion = graphql(DevotionQuery, {
+const withDevotion = graphql(DEVOTION_QUERY, {
     options: (ownProps) => ({
       variables: {id: ownProps.params.id},
       returnPartialData: false,
