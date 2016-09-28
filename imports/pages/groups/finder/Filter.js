@@ -30,11 +30,13 @@ const CAMPUS_LOCATIONS_QUERY = gql`
 `;
 const withCampusLocations = graphql(CAMPUS_LOCATIONS_QUERY, { name: "campusLocations" });
 
+const mapStateToProps = (state) => ({ location: state.routing.location });
+
 const defaultTags = [];
 @withRouter
 @withAttributes
 @withCampusLocations
-@connect(null, state => ({ location: state.routing.location }))
+@connect(mapStateToProps)
 export default class Filter extends Component {
 
   static propTypes = {

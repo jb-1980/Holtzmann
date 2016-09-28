@@ -58,11 +58,11 @@ const CONTENT_FEED_QUERY = gql`
 `;
 
 const withFeedContent = graphql(CONTENT_FEED_QUERY, {
-  options: state => ({
+  options: ownProps => ({
     variables: {
-      excludeChannels: state.topics.topics,
-      limit: state.paging.pageSize * state.paging.page,
-      skip: state.paging.skip,
+      excludeChannels: ownProps.topics.topics || "",
+      limit: ownProps.paging.pageSize * ownProps.paging.page,
+      skip: ownProps.paging.skip,
       cache: true,
     },
   }),
