@@ -56,8 +56,8 @@ const CAMPUS_LOCATION_QUERY = gql`
 const withCampusLocations = graphql(CAMPUS_LOCATION_QUERY, { name: "campusLocations" });
 
 const GROUP_FINDER_QUERY = gql`
-  query GroupFinder($query: String, $tags: [String], $limit: Int, $offset: Int, $ip: String, $campuses: [String]) {
-    groups(query: $query, attributes: $tags, limit: $limit, offset: $offset, clientIp: $ip, campuses: $campuses) {
+  query GroupFinder($query: String, $tags: [String], $limit: Int, $offset: Int, $ip: String, $campuses: String) {
+    groups(query: $query, attributes: $tags, limit: $limit, offset: $offset, clientIp: $ip, campus: $campuses) {
       count
       results {
         id

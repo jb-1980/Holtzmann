@@ -30,7 +30,7 @@ const CAMPUS_LOCATIONS_QUERY = gql`
 `;
 const withCampusLocations = graphql(CAMPUS_LOCATIONS_QUERY, { name: "campusLocations" });
 
-const mapStateToProps = (state) => ({ location: state.routing.location });
+const mapStateToProps = state => ({ location: state.routing.location });
 
 const defaultTags = [];
 @withRouter
