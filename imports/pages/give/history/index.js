@@ -9,6 +9,8 @@ import { header as headerActions } from "../../../store";
 import Layout from "./Layout";
 import Details from "./Details";
 
+import infiniteScroll from "../../../decorators/infiniteScroll";
+
 const FILTER_QUERY = gql`
   query GetFilterContent {
     family: currentFamily {
@@ -46,11 +48,25 @@ const withTransactions = graphql(TRANSACTIONS_QUERY, {
     variables: { limit: 20, skip: 0, people: [], start: "", end: "" },
     forceFetch: true,
   }),
+  props: ({ data }) => ({
+    data,
+    loading: data.loading,
+    fetchMore: () => data.fetchMore({
+      variables: { ...data.variables, skip: data.transactions.length },
+      updateQuery: (previousResult, { fetchMoreResult }) => {
+        if (!fetchMoreResult.data) return previousResult;
+        return {
+          transactions: [...previousResult.transactions, ...fetchMoreResult.data.transactions],
+        };
+      },
+    }),
+  }),
 });
 
 @connect()
 @withFilter
 @withTransactions
+@infiniteScroll()
 class Template extends Component {
 
   static propTypes = {
