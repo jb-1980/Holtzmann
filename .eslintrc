@@ -25,6 +25,7 @@
     "RemoteCommand": true
   },
   "rules": {
+    "arrow-parens": [2, "always"],
     "quotes": [2, "double"],
     "import/no-unresolved": [2, { "ignore": [
       "^meteor/*", "^/imports/*"

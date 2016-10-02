@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import Accounts from "../../blocks/accounts";
 import Loading from "../../components/loading";
 
-@connect(state => ({ breakpoints: state.responsive.breakpoints }))
+@connect((state) => ({ breakpoints: state.responsive.breakpoints }))
 class Template extends Component {
 
   render() {

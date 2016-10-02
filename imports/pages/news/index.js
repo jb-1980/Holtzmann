@@ -44,7 +44,7 @@ const STORIES_QUERY = gql`
 `;
 
 const withNews = graphql(STORIES_QUERY, {
-  options: state => ({
+  options: (state) => ({
     variables: {
       limit: state.paging.pageSize * state.paging.page,
       skip: state.paging.skip,
@@ -52,7 +52,7 @@ const withNews = graphql(STORIES_QUERY, {
   }),
 });
 
-const mapStateToProps = state => ({ paging: state.paging });
+const mapStateToProps = (state) => ({ paging: state.paging });
 
 @connect(mapStateToProps)
 @withNews
