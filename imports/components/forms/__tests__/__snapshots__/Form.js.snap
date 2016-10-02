@@ -1,11 +1,15 @@
 exports[`test accepts all props 1`] = `
 <form
-  action="test4"
+  action="hello"
   className="hard-ends test3"
   id="test1"
   method="test5"
-  onSubmit="test2"
-  style="test6">
+  onSubmit={[Function anonymous]}
+  style={
+    Object {
+      "display": "block"
+    }
+  }>
   <fieldset
     className="test7" />
 </form>

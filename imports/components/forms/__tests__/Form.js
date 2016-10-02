@@ -7,7 +7,8 @@ it("should exist", () => {
 });
 
 it ('accepts all props', () => {
-  const form = renderer.create(<Form id="test1" submit="test2" classes="test3" action="test4" method="test5" style="test6" fieldsetTheme="test7"/>);
+  const fn = jest.fn();
+  const form = renderer.create(<Form id="test1" submit={fn} classes="test3" action="hello" method="test5" style={{display: "block"}} fieldsetTheme="test7"/>);
 
   expect(form).toMatchSnapshot();
 });

@@ -22,3 +22,11 @@ it("should accept props", () => {
       inputClasses={["test10", "test11"]}/>);
   expect(checkbox).toMatchSnapshot();
 });
+
+it("should hide label with prop", () => {
+  const checkbox = renderer.create(
+    <Checkbox
+
+    />
+  )
+});
