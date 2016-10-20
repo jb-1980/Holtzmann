@@ -28,6 +28,7 @@ before_install:
 - mv -fv .travis/ssh-config ~/.ssh/config
 - rvm install 2.2.5
 - rvm use 2.2.5
+- 'if [[ "$TRAVIS_OS_NAME" == "osx" && "$CC" == "gcc" ]]; then brew install gcc; CC=gcc-5; fi'
 script:
   - npm i && npm link
   - npm test
